@@ -128,14 +128,14 @@ void main()
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// samp per pixel
 	reg_la0_data = 0x3000; // smp = 0 corresponds to 32 samp per pixel
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// background color r
 
@@ -143,19 +143,19 @@ void main()
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// background color g
 	
@@ -163,19 +163,19 @@ void main()
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// background color b
 	
@@ -183,33 +183,33 @@ void main()
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	reg_la0_data = 0x3000;
 	reg_la0_data = 0x2000; // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// image height
 	reg_la0_data = (0x8 | 0x3000);	// image height = 8
 	reg_la0_data = (0x8 | 0x2000); // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 	// image width
 	reg_la0_data = (0x8 | 0x3000);	// image width = 8
 	reg_la0_data = (0x8 | 0x2000); // set input vld low
 
 	// wait for input ready signal
-	while ((reg_la1_data_in & 0x2000000) == 0x0);
+	while ((reg_la1_data_in & 0x1000000) == 0x0);
 
 
 	// // Configure LA probes from [63:32] as inputs to disable counter write
